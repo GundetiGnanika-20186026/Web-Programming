@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assign-2</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+    .background{
+    	background-color: white;
+    	height : 2px;
+    	border-bottom: 50px solid transparent;
+    	border-left:50px solid blue;
+    	border-top:50px solid transparent;
+    }
+    .firstbox{
+    	background-color: blue;
+
+    	margin-left: auto;
+    	margin-right: auto;
+    }
+    .secondbox{
+    	background-color: #ccf2ff;
+    	/*margin-top : 20px;*/
+    	margin-left: auto;
+    	margin-right: auto;
+
+    }
+    .bordercolor{
+    	border: 2px solid blue;
+    }
+    .margindeclaration{
+    	margin-top: 20px;
+    }
+    .thirdbox{
+    	margin-top:20px;
+    	margin-left: auto;
+    	margin-right: auto;
+    	margin-bottom: 30px;
+    	background-color: white;
+    	border: 2px solid pink;
+    	width:1000px;
+    	height:650px;
+    	padding: 20px;
+
+    }
+    .danger{
+    	border: 2px solid red;
+
+    }
+    .warning{
+    	border: 2px solid black;
+
+    }
+    .sucess{
+    	border: 2px solid green;
+
+    }
+    .speech-bubble {
+	position: relative;
+	width: 40px;
+	/*background: #00aabb;*/
+	border-radius: .4em;
+	background:#ffff1a;
+
+}
+.newtag{
+
+	border-bottom: 50px solid transparent;
+    border-left:50px solid white;
+    border-top:50px solid transparent;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	/*border-top-color: #00aabb;*/
+	border-top-color: black;
+	border-bottom: black;
+	border-left: black;
+	margin-left: -10px;
+	margin-bottom: -20px;
+}
+
+
+</style>
+</head>
+<body>
+	<div class = "container">
+		<div class = "bordercolor margindeclaration ">
+
+		    <div class = "row firstbox">
+			    <div class = "col-md-1  col-xs-1">
+			    </div>
+			    <div class = "col-md-2  col-xs-1 background">
+			    	<h5> learn by doing</h5>
+				</div>
+			    <div class = "col-md-9 col-xs-1 newtag">
+			    </div>
+		    </div>
+		    <div class = "row secondbox">
+		    	<!-- <span>second box</span> -->
+		    	<br>
+		    	<br>
+		    	<div class = "row thirdbox">
+		    		<p>Each Computer has a built in instruction set that it knows how to execute by desion.</p>
+		    		    <!-- <div class="alert alert-warning ">
+                        <strong>Warning!</strong> Indicates a warning that might need attention.
+
+                        </div> -->
+                        <div class ="speech-bubble">
+                        	hint
+                        </div>
+                        <br>
+
+
+
+
+                        <div class="alert alert-warning alert-dismissible warning">
+                             <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                             <p> Recall that we use the term computation to mean "the execution of a sequence of instructions by a computer with the information of solving a given problem".</p>
+
+                        </div>
+
+
+
+                    <input type="radio" name="gender" value="male" checked> true<br>
+                    <input type="radio" name="gender" value="female">false<br>
+                        <br>
+                        <!-- <div class="alert alert-danger ">
+
+                        </div> -->
+
+
+                        <div class="alert alert-danger alert-dismissible  danger">
+                             <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                             <p> incorrect. Each computer has a set of primitive instructions that is "wierd" to execute. we call this the instruction set of the computer.</p>
+                        </div>
+
+
+                    <hr>
+                    <p>The computer uses intelligence to execute instructions. </p>
+
+                        <div class ="speech-bubble">
+                        	hint
+                        </div>
+                        <br>
+
+                        <div class="alert alert-warning alert-dismissible warning">
+                             <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                            <p> Recall that we said a computer executes the instructions given to it mechanically.</p>
+
+                        </div>
+
+                    <input type="radio" name="gender" value="male" checked> true<br>
+                    <input type="radio" name="gender" value="female">false<br>
+                    <br>
+
+
+
+
+
+                     <div class="alert alert-success alert-dismissible sucess">
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                        <p>correct a computer executes instructions automatically.its main task is to simplify execute the instructions given to it and remember their results as the computation goes on. the part that may require intelligence is exptressing a corputation in terms of instructions.</p>
+                     </div>
+
+		    	</div>
+		    	<a href = "#" style = "float:right; margin-right : 35px ; margin-bottom : 20px">reset this activity</a>
+
+
+		    </div>
+        </div>
+
+	</div>
+
+</body>
+</html>
