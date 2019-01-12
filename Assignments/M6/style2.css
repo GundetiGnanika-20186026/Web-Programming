@@ -1,0 +1,75 @@
+.color1{
+
+	border: 1px solid green;
+}
+.color2 {
+  border: 3px solid green;
+}
+.jumbotron1 {
+    position: relative;
+    background: #fff url("cspp.jpg") center center;/*slide.jpg =>you image*/
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.jumbotron2 {
+    position: relative;
+    background: #fff url("dsa.png") center center;
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.jumbotron3 {
+    position: relative;
+    background: #fff url("dbms.png") center center;
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.jumbotron4 {
+    position: relative;
+    background: #fff url("ics.jpg") center center;
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.jumbotron5 {
+    position: relative;
+    background: #fff url("cnf.jpg") center center;
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+.jumbotron6 {
+    position: relative;
+    background: #fff url("cybersecurity.png") center center;
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+a {
+  color: red;
+  float:right;
+}
+.ex1 {
+  /*background-color: lightblue;*/
+  /*width: 110px;*/
+  height: 110px;
+  overflow: scroll;
+}
+
+.img1 {
+  border-radius: 50%;
+}
+
+.column {
+  float: left;
+  margin-left: 50px;
+  width: 25%;
+  padding: 10px;
+  height: 200px; /* Should be removed. Only for demonstration */
+}
