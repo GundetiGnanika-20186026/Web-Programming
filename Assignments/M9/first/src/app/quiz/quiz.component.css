@@ -1,0 +1,80 @@
+.background{
+    background-color: white;
+    height : 2px;
+    border-bottom: 50px solid transparent;
+    border-left:50px solid blue;
+    border-top:50px solid transparent;
+}
+.firstbox{
+    background-color: blue;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+.secondbox{
+    background-color: #ccf2ff;
+    /*margin-top : 20px;*/
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.bordercolor{
+    border: 2px solid blue;
+}
+.margindeclaration{
+    margin-top: 20px;
+}
+.thirdbox{
+    margin-top:20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    background-color: white;
+    border: 2px solid pink;
+    width:1000px;
+    /* height:650px; */
+    padding: 20px;
+
+}
+.danger{
+    border: 2px solid red;
+
+}
+.warning{
+    border: 2px solid black;
+
+}
+.sucess{
+    border: 2px solid green;
+
+}
+.speech-bubble {
+position: relative;
+width: 40px;
+/*background: #00aabb;*/
+border-radius: .4em;
+background:#ffff1a;
+
+}
+.newtag{
+
+border-bottom: 50px solid transparent;
+border-left:50px solid white;
+border-top:50px solid transparent;
+}
+
+.speech-bubble:after {
+content: '';
+position: absolute;
+bottom: 0;
+left: 50%;
+width: 0;
+height: 0;
+border: 20px solid transparent;
+/*border-top-color: #00aabb;*/
+border-top-color: black;
+border-bottom: black;
+border-left: black;
+margin-left: -10px;
+margin-bottom: -20px;
+}

@@ -1,0 +1,12 @@
+
+  <p>{{que.question}}</p>
+  <div *ngFor = "let option of que.options">
+   <label><input [disabled]="butonblock" type="radio" (click) = "evaluation(option)" name="optradio" checked>{{option}}</label>
+  </div>
+  <div class="alert alert-success" [style.display]="dis">
+   <strong>Success!</strong>
+ </div>
+
+ <div class="alert alert-danger" [style.display]="disdan">
+   <strong>Incorrect!</strong>
+ </div>

@@ -1,0 +1,35 @@
+<div class = "container">
+		<div class = "bordercolor margindeclaration ">
+
+		    <div class = "row firstbox">
+			       <div class = "col-md-1  col-xs-1">
+			       </div>
+			      <div class = "col-md-2  col-xs-1 background">
+			    	<h5> learn by doing</h5>
+				    </div>
+			      <div class = "col-md-9 col-xs-1 newtag">
+			      </div>
+		    </div>
+		    <div class = "row secondbox">
+		    	<!-- <span>second box</span> -->
+		    	<br>
+		    	<br>
+		    	<div class = "thirdbox" >
+            <div class = "firstone" *ngFor = "let question of questionsfromjs">
+			  <app-hint [que] = "question"></app-hint>
+			  
+			  <app-question [que] = "question"></app-question>
+			  <br><br>
+			  <hr>
+			  <br>
+			</div>
+              
+		    		
+		     
+
+
+		    </div>
+        </div>
+
+	  </div>
+</div>

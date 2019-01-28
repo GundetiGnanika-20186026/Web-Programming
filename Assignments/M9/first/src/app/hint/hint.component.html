@@ -1,0 +1,15 @@
+<button (click) = "hintfunc()" type="button" class="btn btn-info">Hint</button>
+<br>
+<br>
+<div class="alert alert-warning" [style.display] = "isdisplayed">
+    <!-- <a  class="close"  aria-label="close">&times;</a> -->
+    <!-- <strong>Warning!</strong> {{que.hint[0]}} -->
+  <div> <button  style="float:left" (click) = "previous()"  type="button" class="far fa-angle-right" >prev</button>
+    <button  style="float:right" (click) = "next()"  type="button" class="far fa-angle-right">next</button>
+          <strong >{{prev}}</strong>
+  </div>
+ 
+<br>
+     
+  </div>
+  
