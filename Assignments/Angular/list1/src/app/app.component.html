@@ -1,0 +1,36 @@
+<div id="1111" class = "maindiv">
+  <form id="formid" action="/action_page.php" method="post">
+    <div class="container" style="margin: 50px 50px 50px 50px" id="first">
+      <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+    </div>
+  </form>
+    
+  <div id = "buttoncontainer" class="container" style="margin: 50px 50px 50px 50px">
+    <button id = "butt" type="button" (click)="buttonsfunc()" style = "float:center" >Submit!</button>
+
+  </div>
+
+  <div *ngIf="submit1">
+   
+    <!-- <div *ngFor="let i of [1,2,3]">
+          <div *ngFor="let i of [1,2,3]">
+
+          <span   style="text-align: center">jello</span>
+          </div>
+
+      </div> -->
+      <div class = "container-fluid">
+          <div class = "row"  *ngFor = "let i of [0,1,2]" style="padding-left: 18%; padding-right: 10%;">   
+              <div  class="col-md-4 cell" style="text-align: center; border: 2px solid black; max-width: 250px; margin: 10px 10px 10px 10px;" *ngFor = "let j of [0,1,2]">{{i * 3  + j + 1}}</div>
+      
+            </div>
+      </div>
+      
+  </div>
+</div>
+
+<router-outlet></router-outlet>

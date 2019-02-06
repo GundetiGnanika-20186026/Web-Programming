@@ -1,0 +1,42 @@
+<div class = "container">
+    <form  style="margin: 25px 25px 25px 25px">
+
+        <label for="fname">Name : </label>
+        <input type="text" id="fname"   [(ngModel)]="name" name="firstname" placeholder="Your name.." required><br>
+        <p style="color:red">{{nameer}}</p>
+        <br>
+        <br>
+
+    
+        <label for="fname">Email Address: </label>
+        <input type="email" name="emailaddress"     [(ngModel)]="emid" placeholder = "email ID" required><br>
+        <p style="color:red">{{emider}}</p>
+        <br>
+        <br>
+        <label for="fname">Password : </label>
+        <input type="password" name="pwd"     [(ngModel)]="pass" placeholder="password" required><br>
+        <p style="color:red">{{passer}}</p>
+        <br>
+        <br>
+        <label for="fname1">Re-enter Password : </label>
+        <input type="password" name="pwd1"     [(ngModel)]="pass1" placeholder="enter password again" required><br>
+        <p style="color:red">{{twoer}}</p>
+        <br>
+        <br>
+
+        <label for="dob">Date of Birth : </label>
+        <input type="date"    [(ngModel)]="dob1" name="bday"><br>
+        <p style="color:red">{{dateer}}</p>
+        <br>
+        <br>
+
+
+        
+    </form>
+    <input type="submit"  (click) = "valid()" value="Submit">
+    <p style="color:green">{{sucess}}</p>
+
+
+
+</div>
+

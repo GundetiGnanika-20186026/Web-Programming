@@ -1,0 +1,20 @@
+<div class = "container">
+    <form style="margin: 100px 100px 100px 100px">
+      E-mail  ID   : <input type="email" name="emailaddress" [ngModelOptions]="{standalone: true}"   [(ngModel)]="emid" placeholder = "email ID" required><br>
+      <p style="color:red">{{error1}}</p>
+      <br><br>
+      Password : <input type="password" name="pwd" [ngModelOptions]="{standalone: true}"   [(ngModel)]="password1" placeholder="password" required><br>
+      <p style="color:red">{{error2}}</p>
+      <br>
+     
+    </form>
+    <input type="submit" (click) = "logfun()"value="Submit">
+     {{sucess1}}
+
+
+</div>
+
+
+
+
+ 

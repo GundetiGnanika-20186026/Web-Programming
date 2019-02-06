@@ -1,0 +1,13 @@
+<div class="jumbotron">
+  <div *ngFor = "let i of array">
+      <form >
+          <input class = "check" type="checkbox" name="vehicle1"  value="Bike">
+              <label>
+                  {{i}}
+              </label>
+          <button type="delete" (click) = "deletevalue(i)" value="Reset">Delete</button>
+        </form>
+  </div>
+    
+    
+</div>

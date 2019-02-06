@@ -1,0 +1,26 @@
+<div class="maincontainer">
+  <h1 style="text-align: center;color:crimson"> TO-DO List</h1>
+
+  <div class = "container">
+    <form>
+
+        <input type="text" name="FirstName" [(ngModel)] = "task" value="Mickey">
+    
+        <input type="submit" (click)= "taskfunc()" value="Submit">
+    </form>
+  </div>
+  <br>
+  <br>
+  <div *ngIf = "variable">
+
+      <app-tasks></app-tasks>
+
+  </div>
+  
+
+</div>
+
+
+
+
+<router-outlet></router-outlet>
