@@ -1,0 +1,67 @@
+
+
+
+
+<!-- ------------------------------------------------------------------------------- -->
+
+
+<app-navbar></app-navbar>
+  <div class="container-fluid">
+    <div class="jumbotron">
+      <div class = "row">
+        <div class = "col-lg-3">
+            <div class="card">
+                <img class = "img-responsive"src="{{product?.image}}" alt="Avatar" style="width:100%">
+                <div class="container" style = "text-align: center;padding-bottom: 10px;">
+                    <h3><span class="label label-default">Rating</span></h3>
+                    <p id = "rating">{{product?.rating}}/5</p>
+                </div>
+              </div>
+        </div>
+        <div class = "col-lg-9">
+          <h3 style="color:blue">{{product?.name}}</h3>
+          <hr style = "border-color: black">
+          <p>{{product?.description}}</p>
+          <div class = "row">
+            <div class = "col-lg-6">
+              <span class="badge" id = "pricebadge"><h4>Price: <strong>{{product?.price}} &#8377;</strong></h4></span>
+              <p id = "avaitxt"> Available :<span class="badge" id = "avaibadge">{{product?.availability}}</span> </p>
+            </div>
+          </div>
+          <br>
+          <br>
+          <br>
+          <br>
+          <div class = "row">
+            <div class = "col-lg-9"></div>
+            <div class = "col-lg-3" style = "float:right;">
+              <button *ngIf="product?.availability != 0" class = "btn btn-warning" style = "margin-right:10px;"  (click) = "addtocart(product?._id)"><span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart</button>
+              <button class = "btn btn-info" (click) = "sharefunc()"> <span class="glyphicon glyphicon-share-alt"></span> Share</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class = "row">
+        <div class = "col-lg-9" style = "margin-left: 15px;">
+            <div class="form-group">
+                <label for="comment"><h4><b>Comment:</b></h4></label>
+                <textarea class="form-control" rows="5" id="comment" [(ngModel)] = "comment"></textarea>
+              </div>
+        </div>
+        <div class = "col-lg-2" style = "margin-top: 50px;">
+              <button class= "btn btn-primary" (click) = "saveComment()">Post</button>
+        </div>
+       
+      </div>
+      <ul class="list-group" style = "margin-left: 15px;">
+          <li class="list-group-item" *ngFor = "let review of product?.reviews">
+            <h5><strong>{{review.name}}</strong></h5>
+            <div class="alert alert-warning">
+                 {{review.comment}}
+            </div>
+            <br>
+          </li>
+        </ul>
+      
+  </div>
